@@ -92,9 +92,10 @@ PRODUCT_PACKAGES += \
 	android.hardware.bluetooth@1.1.vendor:64
 
 # Boot control HAL
+# updated from Xiaomi Rosemary
 PRODUCT_PACKAGES += \
-    android.hardware.boot-service.default \
-    android.hardware.boot-service.default_recovery
+        com.android.hardware.boot \
+        android.hardware.boot-service.default_recovery 
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -202,8 +203,10 @@ PRODUCT_PACKAGES += \
 	libmemunreachable.vendor:64
 
 # Power
+# Copied from Xiaomi Rosemary to use Mediatek's default power service, instead of android.hardware.power-service.xiaomi-libperfmgr
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi-libperfmgr
+     android.hardware.power-service-mediatek \
+     android.hardware.power@1.3.vendor
 
 # Power configurations
 PRODUCT_COPY_FILES += \
