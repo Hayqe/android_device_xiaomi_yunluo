@@ -94,8 +94,9 @@ PRODUCT_PACKAGES += \
 # Boot control HAL
 # updated from Xiaomi Rosemary
 PRODUCT_PACKAGES += \
-        com.android.hardware.boot \
-        android.hardware.boot-service.default_recovery 
+    	android.hardware.boot@1.2-impl \
+    	android.hardware.boot@1.2-impl.recovery \
+    	android.hardware.boot@1.2-service
 
 # Camera
 PRODUCT_PACKAGES += \
